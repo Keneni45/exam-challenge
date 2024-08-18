@@ -184,19 +184,7 @@ const MultipleChoiceExam = () => {
                 <span class="text-4xl mr-1">1000</span>
               </div>
             </div>
-            {/* <div class="flex items-center justify-center">
-              <span class="text-4xl mr-2">{currentQuestionData.image3}</span>
-              <span class="text-4xl mr-2">{currentQuestionData.image4}</span>
-              <span class="text-4xl mr-2">{currentQuestionData.image5}</span>
-              <span class="text-4xl mr-2">=100</span>
-            </div>
-            <div class="flex items-center justify-center">
-              <span class="text-4xl mr-2">{currentQuestionData.image3}</span>
-              <span class="text-4xl mr-2">{currentQuestionData.image4}</span>
-              <span class="text-4xl mr-2">{currentQuestionData.image5}</span>
-              <span class="text-4xl mr-2">=200</span>
-            </div>
-          </div> */}
+
             <div class="flex items-center justify-center ">
               <div class="card w-800 bg-base-100 shadow-xl">
                 <span class="text-2xl mr-1">{currentQuestionData.image1}</span>
