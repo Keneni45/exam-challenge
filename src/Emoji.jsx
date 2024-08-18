@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-//import { useNavigate } from "react-router-dom";
 
 const MultipleChoiceExam = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -8,7 +7,6 @@ const MultipleChoiceExam = () => {
   const [endTime, setEndTime] = useState(null);
   const [totalTime, setTotalTime] = useState(0);
   const [score, setScore] = useState(0);
-  //   const navigate = useNavigate();
 
   const questions = [
     {
@@ -157,38 +155,36 @@ const MultipleChoiceExam = () => {
         )}
         {currentQuestionData.type === "math" && (
           <div class="card">
-            <div class="flex items-center justify-center">
-              <span class="text-4xl mr-2">{currentQuestionData.image3}</span>
-              <span class="text-4xl mr-2">
-                {currentQuestionData.operation1}
-              </span>
-              <span class="text-4xl mr-2">
-                {currentQuestionData.image3}
-                <span class="text-4xl mr-2">
+            <div class="flex items-center justify-center ">
+              <div class="card w-800 bg-base-100 shadow-xl">
+                <span class="text-2xl mr-1">{currentQuestionData.image3}</span>
+                <span class="text-2xl mr-1">
                   {currentQuestionData.operation1}
                 </span>
-              </span>
-              <span class="text-4xl mr-2">
-                {currentQuestionData.image3}
-                <span class="text-4xl mr-2">
-                  {currentQuestionData.operation1}
+                <span class="text-2xl mr-1">
+                  {currentQuestionData.image3}
+                  <span class="text-2xl mr-1">
+                    {currentQuestionData.operation1}
+                  </span>
                 </span>
-              </span>
-              <span class="text-4xl mr-2">
-                {currentQuestionData.image3}
-                <span class="text-4xl mr-2">
-                  {currentQuestionData.operation3}
+                <span class="text-2xl mr-1">
+                  {currentQuestionData.image3}
+                  <span class="text-2xl mr-1">
+                    {currentQuestionData.operation1}
+                  </span>
                 </span>
-              </span>
-              <span class="text-4xl mr-2">
-                {currentQuestionData.operation3}
-              </span>
-              {/* <span class="text-4xl mr-2">{currentQuestionData.image2}</span>
-              <span class="text-4xl mr-2">
-                {currentQuestionData.operation2}
-              </span> */}
+                <span class="text-2xl mr-1">
+                  {currentQuestionData.image3}
+                  <span class="text-2xl mr-1">
+                    {currentQuestionData.operation3}
+                  </span>
+                </span>
+                <span class="text-4xl mr-1">= </span>
+                {/* <span class="text-4xl mr-2">{currentQuestionData.image2}</span> */}
+                <span class="text-4xl mr-1">1000</span>
+              </div>
             </div>
-            <div class="flex items-center justify-center">
+            {/* <div class="flex items-center justify-center">
               <span class="text-4xl mr-2">{currentQuestionData.image3}</span>
               <span class="text-4xl mr-2">{currentQuestionData.image4}</span>
               <span class="text-4xl mr-2">{currentQuestionData.image5}</span>
@@ -199,6 +195,72 @@ const MultipleChoiceExam = () => {
               <span class="text-4xl mr-2">{currentQuestionData.image4}</span>
               <span class="text-4xl mr-2">{currentQuestionData.image5}</span>
               <span class="text-4xl mr-2">=200</span>
+            </div>
+          </div> */}
+            <div class="flex items-center justify-center ">
+              <div class="card w-800 bg-base-100 shadow-xl">
+                <span class="text-2xl mr-1">{currentQuestionData.image1}</span>
+                <span class="text-2xl mr-1">
+                  {currentQuestionData.operation1}
+                </span>
+                <span class="text-2xl mr-1">
+                  {currentQuestionData.image3}
+                  <span class="text-2xl mr-1">
+                    {currentQuestionData.operation1}
+                  </span>
+                </span>
+                <span class="text-2xl mr-1">{currentQuestionData.image3}</span>
+                <span class="text-4xl mr-1">= </span>
+
+                <span class="text-4xl mr-1">500</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-center ">
+              <div class="card w-800 bg-base-100 shadow-xl">
+                <span class="text-2xl mr-1">{currentQuestionData.image2}</span>
+                <span class="text-2xl mr-1">
+                  {currentQuestionData.operation1}
+                </span>
+                <span class="text-2xl mr-1">
+                  {currentQuestionData.image3}
+                  <span class="text-2xl mr-1">
+                    {currentQuestionData.operation1}
+                  </span>
+                </span>
+                <span class="text-2xl mr-1">{currentQuestionData.image3}</span>
+                <span class="text-4xl mr-1">= </span>
+
+                <span class="text-4xl mr-1">500</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-center ">
+              <div class="card w-800 bg-base-100 shadow-xl">
+                <span class="text-2xl mr-1">{currentQuestionData.image3}</span>
+                <span class="text-2xl mr-1">
+                  {currentQuestionData.operation1}
+                </span>
+                <span class="text-2xl mr-1">
+                  {currentQuestionData.image3}
+                  <span class="text-2xl mr-1">
+                    {currentQuestionData.operation1}
+                  </span>
+                </span>
+                <span class="text-2xl mr-1">
+                  {currentQuestionData.image3}
+                  <span class="text-2xl mr-1">
+                    {currentQuestionData.operation1}
+                  </span>
+                </span>
+                <span class="text-2xl mr-1">
+                  {currentQuestionData.image3}
+                  <span class="text-2xl mr-1">
+                    {currentQuestionData.operation3}
+                  </span>
+                </span>
+                <span class="text-4xl mr-1">= </span>
+                {/* <span class="text-4xl mr-2">{currentQuestionData.image2}</span> */}
+                <span class="text-4xl mr-1">?</span>
+              </div>
             </div>
           </div>
         )}
